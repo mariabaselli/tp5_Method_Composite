@@ -22,4 +22,6 @@ public class CalculadorJubilado extends Calculador {
     protected String nombreClase() {
        return (CalculadorJubilado.class.getName());
     }
+
+
 }

@@ -24,6 +24,8 @@ public class RemeraImportada extends Remera{
     protected double gananciaComercio() {
         return GANANCIA_COMERCIO;
     }
+
+
 }
 
 

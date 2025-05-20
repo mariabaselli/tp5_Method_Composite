@@ -23,6 +23,7 @@ public class RemeraNacional extends Remera{
 
     @Override
     protected double gananciaComercio() {
+
         return GANANCIA_COMERCIO;
     }
 }

@@ -10,10 +10,7 @@ public abstract class Calculador {
     public Calculador(int mesEnPromocion) {
         this.mesEnPromocion = mesEnPromocion;
     }
-
-
-
-    public double calcularPrecio(double precioProducto) {
+    public final double calcularPrecio(double precioProducto) {
        double precioTotal = precioProducto;
        if (of(mesEnPromocion).equals(now().getMonth())) {
            precioTotal += precioProducto * porcentajePromoMes();
