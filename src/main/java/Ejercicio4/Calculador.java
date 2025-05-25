@@ -4,11 +4,12 @@ import static java.time.LocalDate.now;
 import static java.time.Month.of;
 
 public abstract class Calculador {
-   // private LogTransaction log;
+    private LogTransaction log;
     private int mesEnPromocion;
 
     public Calculador(int mesEnPromocion) {
         this.mesEnPromocion = mesEnPromocion;
+        this.log = new LogTransaction();
     }
     public final double calcularPrecio(double precioProducto) {
        double precioTotal = precioProducto;
@@ -18,7 +19,7 @@ public abstract class Calculador {
        else {
            precioTotal += precioProducto * porcentajeSinMesPromo();
        }
-      // log.log(nombreClase());
+        log.log(nombreClase());
        return precioTotal;
    }
 
